@@ -1,0 +1,125 @@
+﻿@{
+    Layout = "_AdminLayout.cshtml";
+}
+@using System;
+@using Nop.Web.Framework.UI;
+
+
+@{
+
+    Html.AddScriptParts(Url.Content("~/Plugins/Misc.PointOfSale/Scripts/bootstrap.min.js"));
+    Html.AppendCssFileParts(Url.Content("~/Plugins/Misc.PointOfSale/Content/bootstrap.min.css"));
+
+}
+
+
+<h3>
+    Sale
+
+</h3>
+
+
+<div class="row">
+    <div class="col-lg-12">
+
+        <div class="form-inline">
+            <input type="text" id="txtSearchName" style="width:70%" name="search" placeholder="Search By Name" class="form-control" />
+            <input type="text" style="width:20%" name="search" placeholder="Search By Code" class="form-control" />
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+
+
+    $(document).ready(function () {
+
+
+        //$.ajax({
+        //    url: "http://localhost:15536/mainpos/GetAllProducts/",
+            
+        //    type: "POST",
+        //    data: {
+        //        startWith: "bat"
+        //    },
+        //    success: function (data) {
+        //        alert(data);
+        //    }
+        //});
+
+
+    });
+
+    $(function () {
+
+        $("#txtSearchName").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "http://localhost:15536/mainpos/GetAllProducts/",
+
+                    type: "POST",
+                    data: {
+                        startWith: request.term
+                    },
+                    success: function (data) {
+                        response(JSON.parse(data));
+                    }
+                });
+            },
+            create: function () {
+                $(this).data('ui-autocomplete')._renderItem = function (ul, item) {
+                    return $('<li>')
+                        .append('<a>' + item.label +  '</a>')
+                        .appendTo(ul);
+                };
+            },
+            
+            minLength: 2,
+            select: function (event, ui) {
+                alert(ui.item.id);
+
+            },
+            open: function () {
+                $(this).removeClass("ui-corner-all").addClass("ui-corner-top");
+            },
+            close: function () {
+                $(this).removeClass("ui-corner-top").addClass("ui-corner-all");
+            }
+
+        });
+    });
+
+
+
+    $(function () {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        $("#aa").autocomplete({
+            source: availableTags
+        });
+    });
+</script>

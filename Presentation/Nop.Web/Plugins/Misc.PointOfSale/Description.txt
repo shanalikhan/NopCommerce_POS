@@ -1,0 +1,8 @@
+﻿Group: Misc
+FriendlyName: Point Of Sale
+SystemName: Misc.PointOfSale
+Version: 1.00
+SupportedVersions: 3.50
+Author: Shan Ali Khan
+DisplayOrder: 1
+FileName: Nop.Plugin.Misc.PointOfSale.dll

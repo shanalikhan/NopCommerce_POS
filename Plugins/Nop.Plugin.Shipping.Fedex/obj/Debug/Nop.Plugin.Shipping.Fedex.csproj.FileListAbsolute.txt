@@ -1,0 +1,10 @@
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\Views\ShippingFedex\Configure.cshtml
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\web.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\Description.txt
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\logo.jpg
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\Nop.Plugin.Shipping.Fedex.dll.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\Nop.Plugin.Shipping.Fedex.dll
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Shipping.Fedex\Nop.Plugin.Shipping.Fedex.pdb
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.Shipping.Fedex\obj\Debug\Nop.Plugin.Shipping.Fedex.dll
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.Shipping.Fedex\obj\Debug\Nop.Plugin.Shipping.Fedex.pdb
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.Shipping.Fedex\obj\Debug\Nop.Plugin.Shipping.Fedex.csprojResolveAssemblyReference.cache

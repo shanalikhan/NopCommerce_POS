@@ -1,0 +1,10 @@
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\Views\SmsVerizon\Configure.cshtml
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\Description.txt
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\web.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\logo.jpg
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\Nop.Plugin.SMS.Verizon.dll.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\Nop.Plugin.SMS.Verizon.dll
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\SMS.Verizon\Nop.Plugin.SMS.Verizon.pdb
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.SMS.Verizon\obj\Debug\Nop.Plugin.SMS.Verizon.dll
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.SMS.Verizon\obj\Debug\Nop.Plugin.SMS.Verizon.pdb
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.SMS.Verizon\obj\Debug\Nop.Plugin.SMS.Verizon.csprojResolveAssemblyReference.cache

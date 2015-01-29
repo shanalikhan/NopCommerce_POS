@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=XABIST;Initial Catalog=nop;Integrated Security=True;Persist Security Info=False

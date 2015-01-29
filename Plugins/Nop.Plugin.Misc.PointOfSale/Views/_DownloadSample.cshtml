@@ -1,0 +1,15 @@
+﻿@model ProductDetailsModel
+@using Nop.Web.Models.Catalog;
+@using System;
+@using Nop.Web.Framework.UI;
+
+
+@if (Model.HasSampleDownload)
+{
+    <div class="download-sample">
+        <span class="download-sample-button">
+            asd<a href="@Url.RouteUrl("GetSampleDownload", new { productid = Model.Id })">Testing also</a>
+            sdsdffsd
+        </span>
+    </div>
+}

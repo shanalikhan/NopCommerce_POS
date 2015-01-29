@@ -1,0 +1,11 @@
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Description.txt
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Views\MiscWebServices\Configure.cshtml
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\web.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\logo.jpg
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Remote\NopService.svc
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Remote\web.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Nop.Plugin.Misc.WebServices.dll.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Nop.Plugin.Misc.WebServices.dll
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Plugins\Misc.WebServices\Nop.Plugin.Misc.WebServices.pdb
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.Misc.WebServices\obj\Debug\Nop.Plugin.Misc.WebServices.dll
+E:\Respo.Shan\nopCommerce\Plugins\Nop.Plugin.Misc.WebServices\obj\Debug\Nop.Plugin.Misc.WebServices.pdb

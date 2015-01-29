@@ -1,0 +1,7 @@
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\bin\AutoMapper.Net4.dll
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\bin\Nop.Admin.dll.config
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\bin\Nop.Admin.dll
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\bin\Nop.Admin.pdb
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.csprojResolveAssemblyReference.cache
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.dll
+E:\Respo.Shan\nopCommerce\Presentation\Nop.Web\Administration\obj\Debug\Nop.Admin.pdb
