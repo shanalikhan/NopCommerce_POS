@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Nop.Plugin.Misc.PointOfSale.Controllers
 {
@@ -29,11 +30,38 @@ namespace Nop.Plugin.Misc.PointOfSale.Controllers
                         
           
           var results = productService.SearchProducts(keywords:startWith);
-          var list = JsonConvert.SerializeObject(results.Select(m => new { id=m.Id , label = m.Name }).ToList());
+          var list = JsonConvert.SerializeObject(results.Select(m => new { id=m.Id , label = m.Name , price = m.Price }).ToList());
             return Json(list);
 
         }
 
+        [HttpPost]
+        public JsonResult BuyProducts(string array)
+        {
+            
+            var aarray = JArray.Parse(array);
+            foreach (JObject content in aarray.Children<JObject>())
+            {
+                var productId = (int)content.SelectToken("Id");
+                var quantity = (int)content.SelectToken("Quantity");
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+            
+            return null;
+        }
 
     }
 }

@@ -27,6 +27,25 @@
             <input type="text" style="width:20%" name="search" placeholder="Search By Code" class="form-control" />
         </div>
 
+        <table id="tblItems" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+            
+        </table>
+
+        <div class="pull-right">
+            <button class="btn btn-success" onclick="OrderItems()">Save</button>
+        </div>
+
 
     </div>
 </div>
@@ -35,19 +54,6 @@
 
 
     $(document).ready(function () {
-
-
-        //$.ajax({
-        //    url: "http://localhost:15536/mainpos/GetAllProducts/",
-            
-        //    type: "POST",
-        //    data: {
-        //        startWith: "bat"
-        //    },
-        //    success: function (data) {
-        //        alert(data);
-        //    }
-        //});
 
 
     });
@@ -78,7 +84,13 @@
             
             minLength: 2,
             select: function (event, ui) {
-                alert(ui.item.id);
+                //alert(ui.item.id);
+                $('#tblItems > tbody:last').append('<tr><td>'+ui.item.id+'</td><td>'+ui.item.label+'</td><td>'+ ui.item.price+'</td><td>1</td></tr>');
+
+
+
+
+
 
             },
             open: function () {
@@ -92,34 +104,37 @@
     });
 
 
+    var OrderItems = function () {
+       // alert();
+        var data = new Object();
+        data.tableRows = [];
 
-    $(function () {
-        var availableTags = [
-          "ActionScript",
-          "AppleScript",
-          "Asp",
-          "BASIC",
-          "C",
-          "C++",
-          "Clojure",
-          "COBOL",
-          "ColdFusion",
-          "Erlang",
-          "Fortran",
-          "Groovy",
-          "Haskell",
-          "Java",
-          "JavaScript",
-          "Lisp",
-          "Perl",
-          "PHP",
-          "Python",
-          "Ruby",
-          "Scala",
-          "Scheme"
-        ];
-        $("#aa").autocomplete({
-            source: availableTags
+        $("#tblItems > tbody > tr").each(function (index, value) {
+            var array =new Object();
+            array.Id = value.children[0].innerHTML;
+            array.Name = value.children[1].innerHTML;
+            array.Price = value.children[2].innerHTML;
+            array.Quantity = value.children[3].innerHTML;
+
+            data.tableRows[index] = array;
         });
-    });
+
+       
+        data.result = JSON.stringify(data.tableRows);
+        $.ajax({
+            url: "http://localhost:15536/mainpos/BuyProducts/",
+
+            type: "POST",
+            data: {
+                array: data.result
+            },
+            success: function (data) {
+                response(JSON.parse(data));
+            }
+        });
+
+
+    };
+
+   
 </script>
